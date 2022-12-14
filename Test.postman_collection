@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "962a4832-ac6f-4e77-9f9c-2ba6f691ea2f",
+		"name": "SpringJPA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24824952"
+	},
+	"item": [
+		{
+			"name": "ShowListAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sach/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sach",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"ten\":\"Giao Duc Quoc Phong\",\r\n        \"chuyenmuc\":\"Sach Giao Khoa\",\r\n        \"tacgia\":\"Kim Anh\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sach/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sach",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"ten\":\"Bi kip giam can\",\r\n        \"chuyenmuc\":\"Khoa Hoc\",\r\n        \"tacgia\":\"Kim Anh\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sach/update/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sach",
+						"update",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sach/delete/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sach",
+						"delete",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetInfo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sach/get/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sach",
+						"get",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hibernate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sach/search/Kim Anh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sach",
+						"search",
+						"Kim Anh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NativeQuery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sach/searchNative/Kim Anh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sach",
+						"searchNative",
+						"Kim Anh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
